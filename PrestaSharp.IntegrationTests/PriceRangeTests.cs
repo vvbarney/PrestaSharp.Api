@@ -1,5 +1,6 @@
 using Bukimedia.PrestaSharp.Factories;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace PrestaSharp.IntegrationTests
 {
@@ -19,8 +20,8 @@ namespace PrestaSharp.IntegrationTests
         {
             var priceRanges = factory.GetAll();
 
-            Assert.IsNotNull(priceRanges);
-            Assert.AreEqual(1, priceRanges.Count);
+            ClassicAssert.IsNotNull(priceRanges);
+            ClassicAssert.AreEqual(1, priceRanges.Count);
         }
     }
 }

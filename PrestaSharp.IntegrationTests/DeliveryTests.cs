@@ -1,5 +1,7 @@
 using Bukimedia.PrestaSharp.Factories;
+
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace PrestaSharp.IntegrationTests
 {
@@ -19,8 +21,8 @@ namespace PrestaSharp.IntegrationTests
         {
             var delvieries = factory.GetAll();
 
-            Assert.IsNotNull(delvieries);
-            Assert.AreEqual(4, delvieries.Count);
+            ClassicAssert.IsNotNull(delvieries);
+            ClassicAssert.AreEqual(4, delvieries.Count);
         }
     }
 }

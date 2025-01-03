@@ -1,5 +1,6 @@
 using Bukimedia.PrestaSharp.Factories;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace PrestaSharp.IntegrationTests
 {
@@ -19,9 +20,9 @@ namespace PrestaSharp.IntegrationTests
         {
             var manufacturers = factory.GetAll();
 
-            Assert.AreEqual(2, manufacturers.Count);
-            Assert.AreEqual("Studio Design", manufacturers[0].name);
-            Assert.AreEqual("Graphic Corner", manufacturers[1].name);
+            ClassicAssert.AreEqual(2, manufacturers.Count);
+            ClassicAssert.AreEqual("Studio Design", manufacturers[0].name);
+            ClassicAssert.AreEqual("Graphic Corner", manufacturers[1].name);
         }
     }
 }

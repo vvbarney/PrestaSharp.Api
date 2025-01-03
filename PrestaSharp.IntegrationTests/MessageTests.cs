@@ -1,6 +1,7 @@
 ﻿using Bukimedia.PrestaSharp.Entities;
 using Bukimedia.PrestaSharp.Factories;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace PrestaSharp.IntegrationTests
 {
@@ -26,7 +27,7 @@ namespace PrestaSharp.IntegrationTests
 
             var effectiveResult = factory.Add(psMessage);
 
-            Assert.IsNotNull(effectiveResult);
+            ClassicAssert.IsNotNull(effectiveResult);
         }
     }
 }
